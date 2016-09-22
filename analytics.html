@@ -1,0 +1,15 @@
+<amp-analytics >
+  <script type="application/json">
+  {
+    "requests": {
+      "onvisible": "//example.com/beacon?h.d=${sourceHost}&rt.start=navigation&rt.ss=${timestamp}&rt.end=${timestamp}&t_resp=${navTiming(navigationStart,responseStart)}&t_page=${navTiming(responseStart,loadEventStart)}&t_done=${navTiming(navigationStart,loadEventStart)}&nt_nav_type=${navType}&nt_red_cnt=${navRedirectCount}&nt_nav_st=${navTiming(navigationStart)}&nt_red_st=${navTiming(redirectStart)}&nt_red_end=${navTiming(redirectEnd)}&nt_fet_st=${navTiming(fetchStart)}&nt_dns_st=${navTiming(domainLookupStart)}&nt_dns_end=${navTiming(domainLookupEnd)}&nt_con_st=${navTiming(connectStart)}&nt_ssl_st=${navTiming(secureConnectionStart)}&nt_con_end=${navTiming(connectEnd)}&nt_req_st=${navTiming(requestStart)}&nt_res_st=${navTiming(responseStart)}&nt_unload_st=${navTiming(unloadEventStart)}&nt_unload_end=${navTiming(unloadEventEnd)}&nt_domloading=${navTiming(domLoading)}&nt_res_end=${navTiming(responseEnd)}&nt_domint=${navTiming(domInteractive)}&nt_domcontloaded_st=${navTiming(domContentLoadedEventStart)}&nt_domcontloaded_end=${navTiming(domContentLoadedEventEnd)&nt_load_st=${navTiming(loadEventStart)}&nt_load_end=${navTiming(loadEventEnd)}&v=1&http.initiator=amp&u=${sourceUrl}&amp.u=${ampdocUrl}"
+    },
+    "triggers": {
+      "onvisible": {
+        "on": "visible",
+        "request": "onvisible"
+      }
+    }
+  }
+  </script>
+</amp-analytics>
